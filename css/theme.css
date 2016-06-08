@@ -1,0 +1,123 @@
+*, *:before, *:after {
+   -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+body, html{
+	margin: 0px;
+}
+
+body{
+	font-family: arial;
+}
+
+a{
+	text-decoration: none;
+}
+
+.header-wrapper{
+	position:relative;
+    background: url('../img/header-image.jpg');
+    background-size:cover;
+    /*h-shadow v-shadow blur spread color inset(is an inner shadow)*/
+    -moz-box-shadow: inset 0px 550px 350px -350px #fff;
+    -webkit-box-shadow: inset 0px 550px 350px -350px #fff;
+    -o-box-shadow: inset 0px 550px 350px -350px #fff;
+    box-shadow: inset 0px 550px 350px -350px #fff;
+}
+
+.header{
+	padding: 10px 0px;
+	position: relative;
+	max-width: 1000px;
+	margin: auto;
+	height: 450px;
+}
+
+.header-content{
+	position: absolute;
+	right: 0px;
+	bottom: 0px;
+	padding: 7px;
+}
+
+.header-content h1{
+	color: white;
+	text-shadow: 2px 2px 3px black;
+}
+
+.header-content p{
+	color: white;
+	text-shadow: 2px 2px 3px black;
+}
+
+.header-content a{
+	color: white;
+	padding: 18px 20px;
+	display: inline-block;
+	border: solid 2px lightblue;
+	text-shadow: 2px 2px 3px black;
+}
+
+.main-logo{
+	display: inline-block;
+	font-family: 'Aldrich', sans-serif;
+	font-size: 2.3em;
+	padding: 5px;
+	color: cornflowerblue;
+}
+
+.main-logo span{
+	color: darkblue;
+}
+.clearfix:after {
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: " ";
+	clear: both;
+	height: 0;
+}
+
+.header .nav-bar{
+	
+	margin: auto;
+}
+
+.header .nav-bar ul{
+	background-image: url('../img/symphony.png');
+	padding: 0px;
+	float: right;
+	list-style-type: none;
+	margin: 0px;
+}
+
+.header .nav-bar ul li{
+	display: inline-block;
+	float: right;
+	text-align: center;
+}
+
+.header .nav-bar ul li a{
+	padding: 18px 20px;
+	display: block;
+	color: white;
+}
+
+.header .nav-bar ul li:nth-child(1){
+	background-color: rgba(73,150,108,0.6);
+}
+
+.header .nav-bar ul li:nth-child(2){
+	background-color: rgba(50,150,170,0.6);
+}
+
+.header .nav-bar ul li:nth-child(3){
+	background-color: rgba(190,150,70,0.6);
+}
+
+.header .nav-bar ul li:nth-child(4){
+	background-color: rgba(200,150,150,0.6);
+}
+
+/*http://bennettfeely.com/clippy/*/
