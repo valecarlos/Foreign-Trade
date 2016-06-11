@@ -3,6 +3,12 @@
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
 body, html{
 	margin: 0px;
 }
@@ -13,6 +19,11 @@ body{
 
 a{
 	text-decoration: none;
+}
+
+ul{
+	list-style-type: none;
+	padding: 0px;
 }
 
 .header-wrapper{
@@ -37,25 +48,25 @@ a{
 .header-content{
 	position: absolute;
 	right: 0px;
+	left: 0px;
 	bottom: 0px;
-	padding: 7px;
-}
-
-.header-content h1{
-	color: white;
-	text-shadow: 2px 2px 3px black;
+	padding: 12px;
+	background-color: rgba(2, 52, 95, 0.25);
+	text-align: center;
 }
 
 .header-content p{
 	color: white;
+	font-size: 1.8em;
 	text-shadow: 2px 2px 3px black;
+	margin: 12px 0px;
 }
 
 .header-content a{
 	color: white;
 	padding: 18px 20px;
 	display: inline-block;
-	border: solid 2px lightblue;
+	border: solid 3px white;
 	text-shadow: 2px 2px 3px black;
 }
 
@@ -121,3 +132,139 @@ a{
 }
 
 /*http://bennettfeely.com/clippy/*/
+
+.s-content{
+
+}
+
+.s-content ul{
+	margin: 0px;
+	padding: 0px;
+	list-style-type: none;
+	display: -webkit-flex; /* Safari */
+	display: flex;
+	-webkit-flex-direction: row; /* Safari 6.1+ */
+	flex-direction: row;
+}
+
+.s-content ul li{
+	color: white;
+	padding: 35px 20px 20px 20px;
+	width: 25%;
+	line-height: 2;
+	text-align: center;
+	-webkit-transition: all 0.3s ease-in;
+	transition: all 0.3s ease-in;
+}
+
+.s-content ul li h1{
+	text-align: center;
+}
+
+.s-content ul li:nth-child(1){
+	background-color: rgb(44, 189, 218);
+}
+
+.s-content ul li:nth-child(2){
+	background-color: rgb(77, 161, 183);
+}
+
+.s-content ul li:nth-child(3){
+	background-color: rgb(44, 120, 150);
+}
+
+.s-content ul li:nth-child(4){
+	background-color: rgb(26, 96, 152);
+}
+
+.s-content ul li:hover{
+	background-color: rgb(10, 55, 90);;
+}
+
+.sec-testimonies{
+	text-align: center;
+	padding: 25px;
+	background-color: whitesmoke;
+
+}
+
+.testimonies-wrapper{
+	overflow: hidden;
+	width: 400px;
+	margin: auto;
+}
+
+.testimonies-list{
+	width: 1600px;
+	display: block;
+}
+
+.testimonies-list li{
+	float: left;
+	width: 400px;
+	padding: 1px;
+}
+
+blockquote {
+	margin: auto;
+	font-family: Georgia, serif;
+	font-size: 16px;
+	font-style: italic;
+	max-width: 350px;
+	padding: 10px;
+	line-height: 1.45;
+	position: relative;
+	color: #383838;
+}
+
+blockquote:before {
+	display: block;
+	content: "\201C";
+	font-size: 80px;
+	position: absolute;
+	left: -10px;
+	top: -20px;
+	color: #7a7a7a;
+}
+
+blockquote cite:before {
+content: "\2014 \2009 \2009";
+}
+
+blockquote:after {
+	display: block;
+	content: "\201D";
+	font-size: 80px;
+	position: absolute;
+	right: -5px;
+	bottom: -70px;
+	color: #7a7a7a;
+}
+
+footer{
+	text-align: center;
+	background-color: black;
+	color: white;
+	padding: 15px 15px 25px 15px;
+}
+
+footer ul li{
+	display: inline-block;
+	padding: 15px;
+	margin-bottom: 15px;
+}
+
+footer ul li a{
+	color: white;
+}
+
+.big-icon{
+	font-size: 120px;
+	margin: 10px 0px;
+	-webkit-transition: all 0.3s ease-in;
+	transition: all 0.3s ease-in;
+}
+/*
+.s-content ul li:hover i{
+	color: green;
+}*/
