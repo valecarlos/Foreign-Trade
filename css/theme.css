@@ -26,6 +26,27 @@ ul{
 	padding: 0px;
 }
 
+.menu-bar{
+	background-color: blue;
+	display: block;
+	width: 30px;
+	height: 3px;
+	margin-top: 4px;
+	border-radius: 2px;
+}
+
+.burger-nav{
+	margin: 15px;
+	padding: 6px;
+	border: 1px solid transparent;
+	background-color: transparent;
+	cursor: pointer;
+	outline:none;
+	z-index: 1;
+	float: right;
+	display: none;
+}
+
 .header-wrapper{
 	position:relative;
     background: url('../img/header-image.jpg');
@@ -81,6 +102,7 @@ ul{
 .main-logo span{
 	color: darkblue;
 }
+
 .clearfix:after {
 	visibility: hidden;
 	display: block;
@@ -91,7 +113,6 @@ ul{
 }
 
 .header .nav-bar{
-	
 	margin: auto;
 }
 
@@ -101,11 +122,13 @@ ul{
 	float: right;
 	list-style-type: none;
 	margin: 0px;
+	font-size: 0px;
 }
 
 .header .nav-bar ul li{
+	font-size: 16px;
 	display: inline-block;
-	float: right;
+	/*float: right;*/
 	text-align: center;
 }
 
@@ -157,6 +180,14 @@ ul{
 	transition: all 0.3s ease-in;
 }
 
+.s-content ul li a{
+	display: inline-block;
+	border: solid 2px white;
+	color: white;
+	padding: 6px 9px;
+	margin: 15px 0px 10px 0px;
+}
+
 .s-content ul li h1{
 	text-align: center;
 }
@@ -183,25 +214,25 @@ ul{
 
 .sec-testimonies{
 	text-align: center;
-	padding: 25px;
+	padding: 25px 0px;
 	background-color: whitesmoke;
 
 }
 
 .testimonies-wrapper{
+	margin: 15px auto;
 	overflow: hidden;
-	width: 400px;
-	margin: auto;
+	width: 300px;
 }
 
 .testimonies-list{
-	width: 1600px;
+	width: 1200px;
 	display: block;
 }
 
 .testimonies-list li{
 	float: left;
-	width: 400px;
+	width: 300px;
 	padding: 1px;
 }
 
@@ -220,11 +251,11 @@ blockquote {
 blockquote:before {
 	display: block;
 	content: "\201C";
-	font-size: 80px;
+	font-size: 60px;
 	position: absolute;
-	left: -10px;
+	left: 0px;
 	top: -20px;
-	color: #7a7a7a;
+	color: #023288;
 }
 
 blockquote cite:before {
@@ -234,11 +265,11 @@ content: "\2014 \2009 \2009";
 blockquote:after {
 	display: block;
 	content: "\201D";
-	font-size: 80px;
+	font-size: 60px;
 	position: absolute;
-	right: -5px;
-	bottom: -70px;
-	color: #7a7a7a;
+	right: 7px;
+	bottom: -50px;
+	color: #023288;
 }
 
 footer{
@@ -264,7 +295,50 @@ footer ul li a{
 	-webkit-transition: all 0.3s ease-in;
 	transition: all 0.3s ease-in;
 }
+
 /*
 .s-content ul li:hover i{
 	color: green;
 }*/
+
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+	.s-content ul{
+		flex-wrap: wrap;		
+	}
+	.s-content ul li{
+		width: 50%;
+	}
+	.s-content ul li p{
+		display: none;
+	}
+	.s-content ul li h1{
+		font-size: 1em;
+	}
+	blockquote:before{
+		font-size: 55px;
+	}
+	blockquote:after{
+		font-size: 55px;
+	}
+	.big-icon{
+		font-size: 80px;
+	}
+	.burger-nav{
+		display: block;
+	}
+	.header .nav-bar ul{
+		float: none;
+		display: none;
+	}
+	.header .nav-bar ul.show-menu{
+		display: block;
+	}
+
+	.header .nav-bar ul li{
+		display: block;
+	}
+	.header .nav-bar ul li a{
+		padding: 10px;	
+	}
+
+}
